@@ -7,5 +7,8 @@ import {HighlightDirective} from './highlight.directive';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dir works!';
+  private switch = true;
+  onSwitch() {
+    this.switch = !this.switch;
+  }
 }
